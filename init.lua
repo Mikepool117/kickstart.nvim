@@ -989,6 +989,16 @@ require('lazy').setup({
     end,
   },
 
+  { -- enable smooth cursor
+    'gen740/SmoothCursor.nvim',
+    config = function() require('smoothcursor').setup() end,
+  },
+
+  { -- enable smooth scrolling
+    'karb94/neoscroll.nvim',
+    opts = {},
+  },
+
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
     -- change the command in the config to whatever the name of that colorscheme is.
